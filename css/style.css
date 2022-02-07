@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container-cabecalho{
+    height: 70px;
+    background-color: black;
+}
+.logo{
+    width: 140px;
+}
+.container-grid{
+    width: 1200px;
+    margin: 0 auto;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.menu-cabecalho{
+    background-color: #FFF859;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-menu{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+.menu-cabecalho > a:hover{
+    color: red;
+}
+.banner{
+    height: 400px;
+    background-image: url(../imagens/imagem-fundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imagem-pcgamer .imagem-sorteio-natal{
+    float: left;
+    text-align: center;
+}
+.imagem-sorteio-natal{
+    position: relative;
+    right: 40px;
+    bottom: 100px;
+}
+.banner-promocao{
+    position: relative;
+    bottom: 50px;
+    float: right;
+}
+.banner-promocao-natal{
+    position: relative;
+    bottom: 280px;
+    right: 50px;
+    border: 1px solid red;
+}
+span .texto-descricao{
+    position: relative;
+
+    bottom: 370px;
+    left: 280px;
+
+    border: 1px solid red;
+
+    font-size: 1.5rem;
+    text-align: center;
+}
+@media(min-whidth: 992px){
+    .texto-descricao{
+
+    }
+}
+span .texto-descricao2{
+    position: relative;
+    bottom: 360px;
+    left: 280px;
+
+    border: 1px solid red;
+
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
