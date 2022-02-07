@@ -60,16 +60,14 @@
 .banner-promocao-natal{
     position: relative;
     bottom: 280px;
-    right: 50px;
-        border: 1px solid red;
+    right: 75px;
 }
 .texto-descricao{
+    width: 650px;
     position: relative;
 
     bottom: 370px;
-    left: 280px;
-
-    border: 1px solid red;
+    left: 550px;
 
     font-size: 1.5rem;
     text-align: center;
@@ -80,11 +78,11 @@
     }
 }
 .texto-descricao2{
+    width: 350px;
+
     position: relative;
     bottom: 360px;
-    left: 280px;
-
-    border: 1px solid red;
+    left: 700px;
 
     font-size: 1.5rem;
     text-align: center;
