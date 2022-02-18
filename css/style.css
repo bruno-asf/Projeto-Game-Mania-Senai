@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #E4DBDB
+}
 #container-cabecalho{
     height: 70px;
     background-color: black;
@@ -11,10 +14,63 @@
 .logo{
     width: 140px;
 }
+
+/*======================BOTÃO=======================*/
+#search-box{
+    position: absolute;
+    left: 20%;
+    background-color: #2f4f4f;
+    height: 35px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #f0f5fb;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+}
+::-webkit-input-placeholder{
+   color: #455f5f
+}
+.search-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2f4f4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+#search-box:hover > .search-txt{
+     width: 150px;
+     padding: 0 6px;
+}
+#search-box:hover > .search-btn{
+    background: #000000;
+}
+/*====================GRID DO SITE==========================*/
 .container-grid{
     width: 1200px;
     margin: 0 auto;
 }
+/*=====================IMAGEM FRETE GRÁTIS=====================*/
+.img-frete--gratis{
+    position: relative;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+/*====================CABEÇALHO DO SITE======================*/
 .cabecalho{
     display: flex;
     justify-content: space-between;
@@ -23,7 +79,7 @@
 }
 .menu-cabecalho{
     background-color: #FFF859;
-    width: 700px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,8 +91,9 @@
     font-family: 'Roboto';
 }
 .menu-cabecalho > a:hover{
-    color: red;
+    color: rgb(122, 170, 160);
 }
+/*=====================IMAGEM DE FUNDO DO SITE========================*/
 .banner{
     height: 400px;
     background-image: url(../imagens/imagem-fundo.png);
@@ -55,12 +112,11 @@
 .banner-promocao{
     position: relative;
     bottom: 50px;
-    float: right;
 }
 .banner-promocao-natal{
     position: relative;
     bottom: 280px;
-    right: 75px;
+    left: 650px;
 }
 .texto-descricao{
     width: 650px;
@@ -87,4 +143,325 @@
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
+}
+.promocao-destaques > p{
+    font-size: 2.1rem;
+    font-weight: bolder;
+    color: #940604;
+    text-align: center;
+    padding: 20px 0 0;
+}
+.linha-divisao{
+    width: 100%;
+    padding-bottom: 20px;
+}
+/*====================IMAGEM QUADRADA BRANCA=====================*/
+.banner-destaques{
+    position: relative;
+    width: 335px;
+    height: 450px;
+    background-color: white;
+    float: left;
+    margin: 30px;
+}
+/*====================IMAGEMS ACESSÓRIOS DESTAQUE=====================*/
+.banner--desconto::after{
+    position: absolute;
+    padding: 0 10px;
+    right: 335px;
+    top: 0;
+
+    line-height: 1.5;
+    text-align: center;
+
+    background-color: #2F8A19;
+    color: white;
+    content: "5% OFF";
+}
+article .img-destaque{
+    position: relative;
+    left: 42px;
+    top: 15px;
+}
+article .mod-destaque{
+    position: relative;
+    top: 25px;
+}
+article .mod-destaque2{
+    position: relative;
+    left: -10px;
+    top: 20px;
+    margin: 30px;
+}
+
+article p{
+    text-align: center;
+    padding: 20px 50px 0;
+
+}
+article .preco-destaque{
+    padding-top: 0;
+    text-decoration: line-through
+}
+article h4{
+    text-align: center;
+}
+article h4 strong{
+    color: #940604;
+}
+/*====================== LINHA SEPARAÇÃO DO SITE =====================*/
+.lancamento-pre-venda .lancamento{
+    font-size: 2.1rem;
+    font-weight: bolder;
+    color: #940604;
+    text-align: center;
+}
+.lancamento2{
+    position: relative;
+    bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+/*==================== IMAGENS DESTAQUES LANÇAMENTOS =====================*/
+.banner-lancamentos--pre-venda{
+    position: relative;
+    float: left;
+    left: 20px;
+    width: 210px;
+    height: 250px;
+    background-color: white;
+    margin: 5px 40px;
+}
+.img-prelancamento{
+    position: relative;
+    align-items: center;
+    left: 30px;
+    top: 25px;
+}
+/*==================== IMAGENS LANÇAMENTOS PLAYSTATION 5 =====================*/
+.banner--descricao--produto1::after{
+    position: absolute;
+    padding: 0 40px;
+    left: 40px;
+    top: 35%;
+
+    line-height: 1.5;
+    text-align: center;
+
+    background-color: #db0606;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    content: "Playstation5";
+}
+.preco-lancamento{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #db0606;
+}
+/*==================== IMAGENS LANÇAMENTOS ACER PREDATOR =====================*/
+.banner--descricao--produto2::after{
+    position: absolute;
+    padding: 0 30px;
+    right: 50px;
+    top: 55%;
+
+    line-height: 1.5;
+    text-align: center;
+
+    background-color: #db0606;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    content: "AcerPredator";
+}
+.preco-lancamento2{
+    position: relative;
+    top: 52px;
+    text-align: center;
+    font-weight: bold;
+    color: #db0606;
+}
+/*==================== IMAGENS LANÇAMENTOS NINTENDO SWITCH =====================*/
+.banner--descricao--produto3::after{
+    position: absolute;
+    padding: 0 30px;
+    left: 20px;
+    top: 60%;
+
+    line-height: 1.5;
+    text-align: center;
+
+    background-color: #db0606;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    content: "NintendoSwitch";
+}
+.img-prelancamento3{
+    position: absolute;
+    align-items: center;
+    right: 10px;
+    top: 30px;
+}
+.preco-lancamento3{
+    position: absolute;
+    right: 20px;
+    top: 200px;
+    font-weight: bold;
+    color: #db0606;
+}
+/*==================== IMAGENS LANÇAMENTOS TECLADO GAMER =====================*/
+.banner--descricao--produto4::after{
+    position: absolute;
+    padding: 0 30px;
+    left: 40px;
+    top: 60%;
+
+    line-height: 1.5;
+    text-align: center;
+
+    background-color: #db0606;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    content: "TecladoGamer";
+}
+.img-prelancamento4{
+    position: absolute;
+    align-items: center;
+    right: 15px;
+    top: 10px;
+}
+.preco-lancamento4{
+    position: absolute;
+    right: 20px;
+    top: 200px;
+    font-weight: bold;
+    color: #db0606;
+}
+/*====================== LINHA SEPARAÇÃO DO SITE =====================*/
+.linha-divisao2{
+    width: 100%;
+    padding-top: 35px;
+}
+/*====================== INFORMAÇÕES SUPORTE SITE =====================*/
+.suport--categorias{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.suport::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.suport{
+    padding: 10px;
+    color: #5E5050;
+    float: left;
+}
+article h3{
+    color: #000000;
+    text-transform: uppercase;
+}
+article > ul{
+    list-style: none;
+    margin: 5px;
+}
+article > ul > li{
+    font-size: 1.2em;
+}
+h2{
+    color: #000000;
+    background-color: #ffffff;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0;
+    width: 170px;
+    font-size: 1.4em;
+}
+.img-redes-sociais{
+    position: absolute;
+    top: 260%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 50px;
+}
+.img-redes-sociais > img{
+    margin-right: 4px;
+}
+.campanha-redes-sociais{
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 80px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.pagamento{
+    position: relative;
+    top: 350px;
+    left: 70px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.quali-seguranca{
+    position: absolute;
+    top: 278%;
+    left: 70%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.container-pagamentos{
+    width: 1200px;
+}
+.banner-cartoes-creditos{
+    position: relative;
+    top: 360px;
+    left: 70px;
+}
+.banner-boleto{
+    position: relative;
+    left: 70px;
+    top: 355px;
+}
+.banner-pix{
+    position: absolute;
+    left: 18%;
+    top: 295%
+}
+.banner-seguranca{
+    position: absolute;
+    left: 73.5%;
+    top: 283%
+}
+.banner-localizacao{
+    position: absolute;
+    left: 80%;
+    top: 295%
+}
+.endereco-localizacao{
+    position: absolute;
+    left: 73%;
+    top: 300%;
+    text-align: center;
+    color: #5E5050;
+}
+.rodape{
+    position: absolute;
+    top: 315%;
+    left: 32%;
+    font-weight: lighter;
+    opacity: 50%;
+    font-size: 0.9rem;
+    padding-bottom: 50px;
 }
